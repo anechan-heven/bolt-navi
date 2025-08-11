@@ -1,0 +1,22 @@
+body {
+  background-image: url('background.PNG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.logo {
+  max-width: 80%;
+  height: auto;
+}

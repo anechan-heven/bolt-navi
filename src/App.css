@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+body {
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-wrapper {
+  background-color: rgba(15, 20, 40, 0.75);
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title-header h1 {
+  font-family: 'Exo 2', sans-serif;
+  color: #ffc107;
+  font-size: 3.5rem;
+  text-shadow: 0 0 8px rgba(255, 193, 7, 0.8), 0 0 16px rgba(255, 193, 7, 0.5);
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+  margin-bottom: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title-header .lead {
+  color: #e0e0e0;
+  font-size: 2.4rem;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #ffc107;
 }
 
-.App-link {
-  color: #61dafb;
+.challenger-count {
+  color: #ffc107;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1.1rem;
 }
 
-@keyframes App-logo-spin {
+@keyframes neonGlow {
   from {
-    transform: rotate(0deg);
+    text-shadow: 0 0 8px rgba(255, 193, 7, 0.8), 0 0 16px rgba(255, 193, 7, 0.5);
   }
   to {
-    transform: rotate(360deg);
+    text-shadow: 0 0 12px rgba(255, 193, 7, 1), 0 0 24px rgba(255, 193, 7, 0.8);
   }
+}
+
+.form-control {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 193, 7, 0.5);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: #ffc107;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+}
+
+.form-floating > label {
+    color: #c0c0c0;
+}
+
+.form-control::placeholder {
+    color: #c0c0c0;
+    opacity: 1; 
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #1a1a2e;
+  font-weight: bold;
+  padding: 0.75rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #ffca2c;
+  border-color: #ffca2c;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px #ffc107;
+}
+
+.results-container, .game-container, .game-result-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: rgba(15, 20, 40, 0.75);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.result-item h4 {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.result-item p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+.bolt-icon {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.timer-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffc107;
+  margin-bottom: 1.5rem;
+}
+
+.game-result-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.game-result-container h3.text-warning {
+  color: #ffc107 !important;
+  font-size: 3rem;
+  text-shadow: 0 0 10px #ffc107;
+}
+
+/* ローディングスピナー */
+.loader {
+  border: 4px solid rgba(255,255,255,0.2);
+  border-top: 4px solid #ffc107;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.app-title-logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
