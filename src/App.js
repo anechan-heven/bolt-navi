@@ -248,6 +248,8 @@ function App() {
             <div className="game-result-container">
               <h2>結果発表！</h2>
               <h3 className={gameResult === '勝利！' ? 'text-warning' : 'text-light'}>{gameResult}</h3>
+              {gameResult === '勝利！' && <img src={process.env.PUBLIC_URL + '/win.JPG'} alt="勝利" className="result-image" style={{ maxWidth: '100%', height: 'auto', marginTop: '20px' }} />}
+              {gameResult === '敗北...' && <img src={process.env.PUBLIC_URL + '/lose.JPG'} alt="敗北" className="result-image" style={{ maxWidth: '100%', height: 'auto', marginTop: '20px' }} />}
               <p>あなたのタイム: {formatTime(time).hours}時間 {formatTime(time).minutes}分 {formatTime(time).seconds}秒</p>
               <p>ボルトのタイム: {result.boltTime.hours}時間 {result.boltTime.minutes}分 {result.boltTime.seconds}秒</p>
               <button className="btn btn-primary mt-3" onClick={() => { setGameStarted(false); setGameResult(null); }}>もう一度挑戦する</button>
