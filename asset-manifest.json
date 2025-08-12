@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bolt-navi/static/css/main.2a0a65d2.css",
+    "main.css": "/bolt-navi/static/css/main.7fd01c99.css",
     "main.js": "/bolt-navi/static/js/main.41d668ab.js",
     "static/js/453.da63d379.chunk.js": "/bolt-navi/static/js/453.da63d379.chunk.js",
     "index.html": "/bolt-navi/index.html",
-    "main.2a0a65d2.css.map": "/bolt-navi/static/css/main.2a0a65d2.css.map",
+    "main.7fd01c99.css.map": "/bolt-navi/static/css/main.7fd01c99.css.map",
     "main.41d668ab.js.map": "/bolt-navi/static/js/main.41d668ab.js.map",
     "453.da63d379.chunk.js.map": "/bolt-navi/static/js/453.da63d379.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a0a65d2.css",
+    "static/css/main.7fd01c99.css",
     "static/js/main.41d668ab.js"
   ]
 }
